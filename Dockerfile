@@ -7,7 +7,7 @@ RUN dnf install -y dnf-plugins-core
 RUN dnf copr enable -y d3s/teaching
 
 # Install cross-compiler toolchain
-RUN dnf install -y mff-nswi004-binutils-mipsel-linux-gnu mff-nswi004-gcc-mipsel-linux-gnu
+RUN dnf install --refresh -y mff-nswi004-binutils-mipsel-linux-gnu mff-nswi004-gcc-mipsel-linux-gnu
 
 # Install MSIM
 RUN dnf install -y msim-git
